@@ -99,6 +99,7 @@ Values may be functions. Warning: this may result in unexpected behaviour.
       update_cwd = false,
       reload_on_bufenter = false,
       view = {
+        adaptative_size = false,
         width = 30,
         height = 30,
         hide_root_folder = false,
@@ -366,6 +367,11 @@ Git integration with icons and colors.
 
 *nvim-tree.view*
 Window / buffer setup.
+
+    *nvim-tree.view.adaptative_size*
+    Resize the window on each draw based on the longest line.
+    Only works when |nvim-tree.view.side| is `left` or `right`.
+      Type: `boolean`, Default: `false`
 
     *nvim-tree.view.hide_root_folder*
     Hide the path of the current working directory on top of the tree.

@@ -130,6 +130,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   update_cwd = false,
   reload_on_bufenter = false,
   view = {
+    adaptative_size = false,
     width = 30,
     height = 30,
     hide_root_folder = false,
