@@ -10,12 +10,12 @@ local function expand(node)
   end
 end
 
-local function iterate(_node)
-  if _node.parent and _node.nodes and not _node.open then
-    expand(_node)
+local function iterate(parent)
+  if parent.parent and parent.nodes and not parent.open then
+    expand(parent)
   end
 
-  for _, node in pairs(_node.nodes) do
+  for _, node in pairs(parent.nodes) do
     if node.nodes and not node.open then
       expand(node)
     end
